@@ -17,7 +17,7 @@
   --color-background: rgb(250, 63, 130);
   --background-gradient: linear-gradient(88deg, rgba(250, 63, 130, 1) 0%, rgba(200, 61, 245, 0.7) 46.17%, rgba(80, 53, 220, 1) 100%);
   --font-nav-content: 1.12rem;
-  --font-footer-content: 1.25rem;
+  --font-footer-content: 0.8rem;
   --font-hero-name: 3rem;
   --font-btn: 1.625rem;
 
@@ -41,13 +41,20 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
 }
-header, section {
+header, section, footer {
    display: flex;
    justify-content: center;
 }
 .header-section, .footer-section {
   padding: 2.5rem 0rem;
   position: relative;
+}
+.footer-items {
+  padding: 2.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   width: var(--container-width-lg);

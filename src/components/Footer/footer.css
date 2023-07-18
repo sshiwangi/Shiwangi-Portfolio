@@ -1,0 +1,9 @@
+.footer-content {
+    font-size: var(--font-footer-content);
+}
+.horizontal-line {
+    width: var(--container-width-lg);
+    background-color: #545252;
+    height: 0.3px;
+    margin-bottom: 1.5rem;
+}
