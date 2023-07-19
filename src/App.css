@@ -13,15 +13,17 @@
   --color-bg: #10151A;
   --color-white: rgba(255, 255, 255, 255);
   --color-secondary-white: #f1f1f1;
-  --color-footer-white: #d2d2d2;
+  --color-footer-white: #eaeaea;
   --color-background: rgb(250, 63, 130);
   --background-gradient: linear-gradient(88deg, rgba(250, 63, 130, 1) 0%, rgba(200, 61, 245, 0.7) 46.17%, rgba(80, 53, 220, 1) 100%);
   --font-nav-content: 1.12rem;
   --font-footer-content: 0.8rem;
-  --font-hero-name: 3rem;
-  --font-btn: 1.625rem;
+  --font-hero-desc-name: 1rem;
+  --font-btn: 1.225rem;
+  --font-section-heading: 1.95rem;
+  --color-btns: #2e2e30;
 
-  --container-width-lg: 75%;
+  --container-width-lg: 60%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --container-width-nav-menu-lg: 50%;
@@ -44,6 +46,16 @@ body {
 header, section, footer {
    display: flex;
    justify-content: center;
+   padding: 2.5rem 0rem;
+}
+.nav-ele-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0rem;
+    /* padding-top: 10rem; */
+    height: 70vh;
 }
 .header-section, .footer-section {
   padding: 2.5rem 0rem;
@@ -61,4 +73,70 @@ header, section, footer {
 }
 a.menu-content {
   color: var(--color-white);
+}
+.btn {
+    /* background: transparent; */
+    color: var(--color-white);
+    font-size: var(--font-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7125rem;
+    padding: 0.6rem 0.9rem;
+
+}
+.section-heading-underline {
+  background: var(--background-gradient);
+  height: 0.5rem;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 12%;
+}
+.section-heading {
+  font-size: var(--font-section-heading);
+  margin-bottom: 0.11rem;
+}
+button {
+  border: none;
+  background: transparent;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-btns);
+  color: white;
+  padding: 1rem;
+  font-size: var(--font-btn);
+  border-radius: 50px;
+}
+.image-gallery {
+  display: flex;
+  /* margin-bottom: 5rem; */
+}
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-btns);
+  margin-right: 1rem;
+  padding: 0.7rem;
+}
+.about-container-hover {
+  margin: 2.5rem 0rem;
+}
+.skills-btn {
+  
+    margin: 2.5rem 0rem;
+
+}
+button.skills-btn-item {
+  margin-right: 1rem;
+}
+.about-container {
+  background-color: var(--color-btns);
+  padding: 1.7rem;
+  border-radius: 0.5rem;
+  width: var(--container-width-lg);
 }

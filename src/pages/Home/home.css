@@ -1,0 +1,45 @@
+.nav-ele-content {
+    display: flex;
+    justify-content: space-between;
+}
+h2.hero-headline {
+    font-size: var(--font-hero-desc-name);
+    color: var(--color-footer-white);
+    width: 60%;
+    margin: 1.5rem 0rem;
+}
+.filled-btn {
+    background: var(--background-gradient);
+    margin-right: 1rem;
+}
+.btn-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.stroked-btn {
+    /* background: linear-gradient(88deg, rgba(250, 63, 130, 1) 0%, rgba(200, 61, 245, 0.7) 46.17%, rgba(80, 53, 220, 1) 100%); */
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    border: 2px solid transparent;
+    border-image: linear-gradient(88deg, rgba(250, 63, 130, 1) 0%, rgba(200, 61, 245, 0.7) 46.17%, rgba(80, 53, 220, 1) 100%) 1;
+    border-image-slice: 1;
+    color: white;
+    cursor: pointer;
+}
+img.social-icon {
+    height: 32px;
+    margin-right: 1rem;
+}
+.img-container {
+    border-radius: 50%;
+    /* border: 3px solid white; */
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-gradient);
+    height: 308px;
+    width: 308px;
+}

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className=" footer-items">
       <hr className="horizontal-line"/>
-      <div className='footer-content'>Made by @sshiwangi770 | @ Copyright 2023 | All rights reserved</div>
+      <div className='footer-content'>Made by @sshiwangi770 | &#169; Copyright 2023 | All rights reserved</div>
     </div>
   )
 }
