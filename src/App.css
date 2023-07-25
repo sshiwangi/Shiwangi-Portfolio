@@ -22,12 +22,17 @@
   --font-btn: 1.225rem;
   --font-section-heading: 1.95rem;
   --color-btns: #2e2e30;
+  --project-desc-font-color: #cecece;
+  --project-desc-font-size: 1rem;
+  --color-link-btns: #545252;
+  --color-project-item: #232323;
 
   --container-width-lg: 60%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --container-width-nav-menu-lg: 50%;
   --container-width-nav-menu-md: 55%;
+  --project-desc-width-lg: 75%;
 }
 
 html {
@@ -62,7 +67,7 @@ header, section, footer {
   position: relative;
 }
 .footer-items {
-  padding: 2.5rem 0rem;
+  padding-bottom: 2.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -139,4 +144,55 @@ button.skills-btn-item {
   padding: 1.7rem;
   border-radius: 0.5rem;
   width: var(--container-width-lg);
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-item-container {
+  display: flex;
+}
+.carousel-set {
+  display: flex;
+}
+.see-all-btn {
+  background-color: var(--color-btns);
+  width: 11%;
+  padding: 0.5rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 2.5rem 0rem;
+}
+p.project-desc {
+  /* width: var(--project-desc-width-lg); */
+  color: var(--project-desc-font-color);
+  font-size: var(--project-desc-font-size);
+}
+a.project-btns {
+  color: white;
+  background-color: var(--color-link-btns);
+  font-size: 16px;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  /* margin-right: 1rem; */
+}
+.links-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: var;
+  align-items: center;
+  /* width: var(--project-desc-width-lg); */
+}
+.project-item {
+  border-radius: 0.5rem;
+  margin-right: 10px;
+  padding: 1.3rem;
+  background-color: var(--color-project-item);
+}
+.margin-style{
+  margin-bottom: 0.6rem;
+  width: 100%
 }
