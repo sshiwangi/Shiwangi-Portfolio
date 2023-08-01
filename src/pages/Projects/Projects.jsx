@@ -10,7 +10,14 @@ function Projects() {
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
   }
+  const [activeText, setActiveText] = useState('Home');
+//handling active text state
+  const handleTextClick = (item) => {
+    setActiveText(item);
+  };
+  
   const [showAllProject, setShowAllProject] = useState(false);
+  //handling all project buttn click function
     const handleAllProjectsButtonClick = () => {
         setShowAllProject(prev => !prev);
     }
@@ -19,7 +26,7 @@ function Projects() {
       <div className="container">
         <div className="heading-container">
         <SectionHeading name="Projects" />
-        <p className="see-all-text" onClick={handleAllProjectsButtonClick}>See all</p>
+        <p className={`buttons ${activeText === 'See All' ? 'active-text' : 'see-all-text'}`} onClick={()=> {handleTextClick('See All'); handleAllProjectsButtonClick();}}>See all</p>
         </div>
         
         <div className="btn-container skills-btn">

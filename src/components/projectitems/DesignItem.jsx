@@ -11,7 +11,7 @@ const DesignItem = ({designs}) => {
                 <p className='project-desc margin-style'>{design.desc}</p>
                 <div className="links-btn-container">
                 <span className='project-date'>April, 2023</span>
-                <img height='44px' src={figmaIcon} alt="" />
+               <a href={design.Figma} target="_blank" rel="noopener noreferrer"> <img height='44px' src={figmaIcon} alt="" /></a>
                 </div>
                 
                 

@@ -17,7 +17,7 @@ function WebDesign({activeButton}) {
         title: 'Spinder',
         desc: 'Match-Making',
         date: 'April, 2023',
-        Figma: 'https://github.com/sshiwangi/TheFindHut',
+        Figma: 'https://www.figma.com/file/so5ZMArdzTO4c2qn9OL1n6/Spinder-final-ui?type=design&node-id=0%3A1&mode=design&t=CTCXhhj5UTtI0kBs-1',
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ function WebDesign({activeButton}) {
       title: 'hustlersHelp',
       desc: 'Ed-Tech',
       date: 'April, 2023',
-      Figma: 'https://github.com/sshiwangi/TheFindHut',
+      Figma: 'https://www.figma.com/file/d9genT0kuICvsxw5Pr9AkA/Untitled?type=design&mode=design&t=CTCXhhj5UTtI0kBs-1',
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ function WebDesign({activeButton}) {
       title: 'Portfolio',
       desc: 'personal',
       date: 'April, 2023',
-      Figma: 'https://github.com/sshiwangi/TheFindHut',
+      Figma: 'https://www.figma.com/file/sP3blX3UUgfNxWSt16rpu3/Untitled?type=design&mode=design&t=CTCXhhj5UTtI0kBs-1',
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ function WebDesign({activeButton}) {
       title: 'FindHut',
       desc: 'House Hunt',
       date: 'April, 2023',
-      Figma: 'https://github.com/sshiwangi/TheFindHut',
+      Figma: 'https://www.figma.com/file/mJvtyFzMElhjzBZSWHuVpw/Untitled?type=design&mode=design&t=CTCXhhj5UTtI0kBs-1',
     }
 ];
 const featuredDesigns = designs.slice(0, 2);

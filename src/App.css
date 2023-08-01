@@ -30,7 +30,7 @@
   --color-item-content: #E3E0E0;
 
   --container-width-lg: 60%;
-  --container-width-md: 75%;
+  --container-width-md: 82%;
   --container-width-sm: 86%;
   --container-width-xsm: 95%;
   --container-width-nav-menu-lg: 50%;
@@ -116,6 +116,11 @@ button {
 .active-button {
   margin-right: 1rem;
   background: var(--background-gradient);
+}
+.active-text {
+  background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .heading-container {
   display: flex;

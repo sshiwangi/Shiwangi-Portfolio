@@ -10,8 +10,8 @@ const ProjectItem = ({projects}) => {
                 <p className="project-desc margin-style tech-stack">{project.technology}</p>
                 <p className='project-desc margin-style'>{project.desc}</p>
                 <div className="links-btn-container">
-                <a className='project-btns' href="{project.links.Demo" target="_blank">Demo</a>
-                <a className = 'project-btns' href="{project.links.GitHub" target="_blank">GitHub</a>
+                <a className='project-btns' href={project.links.Demo} target="_blank">Demo</a>
+                <a className = 'project-btns' href={project.links.GitHub} target="_blank">GitHub</a>
                 </div>
                 
             </div>

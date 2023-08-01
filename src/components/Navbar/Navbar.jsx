@@ -5,17 +5,14 @@ import './navbar.css'
 import Collapsed from '../Collapsed/Collapsed'
 
 function Navbar() {
-
+  const [activeText, setActiveText] = useState('Home');
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const [isCrossShow, setIsCrossShow] = useState(false);
 
-  //handling active state of nav items
-  // const [activeNavItem, setActiveNavItem] = useState('');
+  const handleTextClick = (navElenName) => {
+    setActiveText(navElenName);
+  };
 
-  // const handleNavItemClick = (navItem) => {
-  //   setActiveNavItem(navItem);
-  // };
-  
   //handing collapse
   function handleNavCollapse () {
     setIsCrossShow(!isCrossShow);
@@ -27,11 +24,11 @@ function Navbar() {
        <nav className="container navbar-section">
         <div className="brand-name"><span className='my-name'>Shiwangi</span>.in</div>
         <div className="menu-bar">
-          <Link to="/" className="menu-content">Home</Link>
-          <Link to="/about" className="menu-content">About</Link>
-          <Link to="/projects" className="menu-content">Projects</Link>
-          <Link to="/experience" className="menu-content">Experience</Link>
-          <Link to="/contact" className="menu-content">Contact</Link>
+          <Link to="/"  className={`buttons ${activeText === 'Home' ? 'active-text' : 'menu-content'}`} onClick={()=> handleTextClick('Home')} >Home</Link>
+          <Link to="/about" className={`buttons ${activeText === 'About' ? 'active-text' : 'menu-content'}`} onClick={ ()=> handleTextClick('About')}>About</Link>
+          <Link to="/projects"  className={`buttons ${activeText === 'Projects' ? 'active-text' : 'menu-content'}`} onClick={()=> handleTextClick('Projects')}>Projects</Link>
+          <Link to="/experience"  className={`buttons ${activeText === 'Experience' ? 'active-text' : 'menu-content'}`} onClick={()=>handleTextClick('Experience')}>Experience</Link>
+          <Link to="/contact"  className={`buttons ${activeText === 'Contact' ? 'active-text' : 'menu-content'}`} onClick={()=> handleTextClick('Contact')}>Contact</Link>
        </div>
        <div onClick={handleNavCollapse} className='menu-icon hide-menu'>
         <img height="32px" src={menuIcon} alt="menu-icon" />

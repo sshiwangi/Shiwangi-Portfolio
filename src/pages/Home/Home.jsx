@@ -60,18 +60,10 @@ function Home() {
           </div>
           <div className="socials-container">
           {socialLinks.map((item, index) => (
-            <a href={item.link} key={index}>
+            <a href={item.link} target="_blank" key={index}>
               <img className="social-icon" src={item.image} alt={item.alt}/>
             </a>
-      ))}
-            
-              {/* <img className="social-icon" src={linkedin} alt="ig" />
-              <img className="social-icon" src={twitter} alt="ig" />
-              <img className="social-icon" src={github} alt="ig" />
-              <img className="social-icon" src={ig} alt="ig" />
-              <img className="social-icon" src={medium} alt="ig" />
-              <img className="social-icon" src={yt} alt="ig" /> */}
-            
+      ))}   
           </div>
         </div>
         <div className="nav-ele-img-content">

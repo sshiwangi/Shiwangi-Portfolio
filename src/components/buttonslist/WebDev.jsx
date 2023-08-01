@@ -31,8 +31,8 @@ function WebDev({activeButton}) {
             technology: 'React JS',
             desc: 'A dynamic and responsive portfolio website that showcases my skills, experiences, and projects in an elegant and user-friendly interface.',
             links: {
-                Demo: 'https://newt-leggings.cyclic.app/',
-                GitHub: 'https://github.com/sshiwangi/TheFindHut',
+                Demo: 'https://shiwangikumari.vercel.app/',
+                GitHub: 'https://github.com/sshiwangi/Shiwangi-Portfolio',
             },
         },
         {
@@ -42,8 +42,8 @@ function WebDev({activeButton}) {
             technology: 'React JS, Tailwind CSS, Express js, Node js, Mongo DB',
             desc: 'HustlersHelp is a comprehensive platform for entrepreneurs, offering a diverse range of courses, team building, mentorship opportunities, event updates, and a convenient equipment marketplace, all designed to empower and support business growth.',
             links: {
-                Demo: 'https://newt-leggings.cyclic.app/',
-                GitHub: 'https://github.com/sshiwangi/TheFindHut',
+                Demo: 'https://hustlers-help.vercel.app/',
+                GitHub: 'https://github.com/sshiwangi/HustlersHelp',
             },
         },
         {
@@ -53,8 +53,8 @@ function WebDev({activeButton}) {
             technology: 'React JS',
             desc: 'It is an interactive and engaging React Quiz web application to test users knowledge on a wide range of topics with multiple-choice questions, immediate feedback, and final score calculation.',
             links: {
-                Demo: 'https://newt-leggings.cyclic.app/',
-                GitHub: 'https://github.com/sshiwangi/TheFindHut',
+                Demo: 'https://react-quiz-six-steel.vercel.app/',
+                GitHub: 'https://github.com/sshiwangi/React-Quiz',
             },
         },
         {
@@ -64,8 +64,8 @@ function WebDev({activeButton}) {
             technology: 'React JS',
             desc: 'The meme generator is a web-based meme generator that allows users to create their own memes combining text and images in a humorous or satirical way.',
             links: {
-                Demo: 'https://newt-leggings.cyclic.app/',
-                GitHub: 'https://github.com/sshiwangi/TheFindHut',
+                Demo: 'https://get-memes-five.vercel.app/',
+                GitHub: 'https://github.com/sshiwangi/Meme-Generator',
             },
         }
     ];
