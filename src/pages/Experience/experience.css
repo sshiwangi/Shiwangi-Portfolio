@@ -1,0 +1,9 @@
+@media screen and (max-width: 520px){
+    .image-container {
+        margin-right: 0.7rem;
+    }
+    .experience-item-container {
+        padding: 1rem;
+        
+    }
+}

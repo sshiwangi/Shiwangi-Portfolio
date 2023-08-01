@@ -20,6 +20,7 @@
   --font-footer-content: 0.8rem;
   --font-hero-desc-name: 1rem;
   --font-btn: 1.225rem;
+  --font-btn-sm: 1rem;
   --font-section-heading: 1.95rem;
   --color-btns: #2e2e30;
   --project-desc-font-color: #cecece;
@@ -29,8 +30,9 @@
   --color-item-content: #E3E0E0;
 
   --container-width-lg: 60%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-md: 75%;
+  --container-width-sm: 86%;
+  --container-width-xsm: 95%;
   --container-width-nav-menu-lg: 50%;
   --container-width-nav-menu-md: 55%;
   --project-desc-width-lg: 75%;
@@ -61,19 +63,13 @@ header, section, footer {
   align-items: center;
   padding: 5rem 0rem;
     /* padding-top: 10rem; */
-    height: 70vh;
+    height: 100%;
 }
 .header-section, .footer-section {
   padding: 2.5rem 0rem;
   position: relative;
 }
-.footer-items {
-  padding-bottom: 2.5rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
+
 .container {
   width: var(--container-width-lg);
 }
@@ -98,7 +94,7 @@ a.menu-content {
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  width: 12%;
+  width: 60%;
 }
 .section-heading {
   font-size: var(--font-section-heading);
@@ -117,46 +113,19 @@ button {
   font-size: var(--font-btn);
   border-radius: 50px;
 }
-.image-gallery {
-  display: flex;
-  /* margin-bottom: 5rem; */
+.active-button {
+  margin-right: 1rem;
+  background: var(--background-gradient);
 }
-.image-item {
+.heading-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--color-btns);
-  margin-right: 1rem;
-  padding: 0.7rem;
-}
-.about-container-hover {
-  margin: 2.5rem 0rem;
-}
-.skills-btn {
-  
-    margin: 2.5rem 0rem;
-
-}
-button.skills-btn-item {
-  margin-right: 1rem;
-}
-.about-container {
-  background-color: var(--color-btns);
-  padding: 1.7rem;
-  border-radius: 0.5rem;
-  width: var(--container-width-lg);
-}
-.projects-container {
-  display: flex;
-  flex-direction: column;
-}
-.project-item-container {
-  display: flex;
 }
 .carousel-set {
   display: flex;
 }
-.see-all-btn {
+/* .see-all-btn {
   background-color: var(--color-btns);
   width: 11%;
   padding: 0.5rem;
@@ -166,7 +135,7 @@ button.skills-btn-item {
   align-items: center;
   font-size: 14px;
   margin: 2.5rem 0rem;
-}
+} */
 p.project-desc {
   /* width: var(--project-desc-width-lg); */
   color: var(--project-desc-font-color);
@@ -249,16 +218,7 @@ input.input-style {
   display: flex;
   justify-content: center;
 }
-.social-icon-container {
-  display: flex;
-  background-color: var(--color-link-btns);
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem 0.4rem;
-}
+
 .send-btn {
   background: var(--background-gradient);
   font-size: 26px;
@@ -273,4 +233,20 @@ input.input-style {
   background-color: var(--color-project-item);
   border-radius: 0.3rem;
   padding: 2.5rem;
+}
+
+@media screen and (max-width:1140px){
+  .container{
+    width: var(--container-width-md);
+  }
+}
+@media screen and (max-width:960px){
+  .container{
+    width: var(--container-width-sm);
+  }
+}
+@media screen and (max-width:720px){
+  .container{
+    width: var(--container-width-md);
+  }
 }

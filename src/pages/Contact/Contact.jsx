@@ -34,7 +34,10 @@ function Contact() {
   return (
     <div className="about-ele-section">
       <div className="container">
+        <div className="heading-container">
         <SectionHeading name="Experience" />
+        </div>
+        
         <h2 style={{marginBottom: '2rem', marginTop: '2.5rem'}}>Love to hear from you, <br /> Get in touch 👋</h2>
 
          <div className="contact-section">

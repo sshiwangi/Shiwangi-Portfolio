@@ -43,3 +43,27 @@ img.social-icon {
     height: 308px;
     width: 308px;
 }
+.socials-container {
+    display: flex;
+}
+@media screen and (max-width:720px){
+    .home-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-ele-text-content {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    .name{
+        text-align: center;
+    }
+    h2.hero-headline{
+        text-align: center;
+        width: 100%;
+    }
+}

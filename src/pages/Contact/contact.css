@@ -1,0 +1,23 @@
+.social-icon-container {
+    display: flex;
+    background-color: var(--color-link-btns);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0.4rem;
+  }
+#social-icon-sm{
+    height: 32px;
+}
+@media screen and (max-width: 520px){
+    .social-icon-container {
+        height: 45px;
+        width: 45px;
+        margin: 0rem 0.2rem;
+    }
+    #social-icon-sm{
+        height: 24px;
+    }
+}

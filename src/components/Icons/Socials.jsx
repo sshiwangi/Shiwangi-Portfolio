@@ -5,7 +5,7 @@ const Socials = ({icons}) => {
     <div className="icon-container">
         {icons.map((item) => (
             <div key = {item.id} className='social-icon-container'>
-                <img height="32px" src={item.image} alt="" />
+                <img id='social-icon-sm' src={item.image} alt="" />
             </div>
         ))}
     </div>

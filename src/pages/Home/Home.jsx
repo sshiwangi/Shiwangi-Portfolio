@@ -8,12 +8,44 @@ import github from "../../assets/images/github.png"
 import ig from "../../assets/images/Instagram.png"
 import medium from "../../assets/images/Medium Monogram.png"
 import yt from "../../assets/images/YouTube.png"
+import { Link } from "react-router-dom";
 function Home() {
+  const socialLinks = [
+    {
+      id: 1,
+      image: linkedin,
+      link: 'https://www.linkedin.com/in/shiwangi-kumari-5b0b3b1b7/',
+      alt: 'linkedIn'
+      
+    },
+    {
+      id: 2,
+      image: twitter,
+      link: 'https://twitter.com/sshiwangi770',
+      alt: 'twitter'
+      
+    },
+    {
+      id: 3,
+      image: github,
+      link: 'https://github.com/sshiwangi',
+      alt: 'github'
+      
+    },
+    {
+      id: 4,
+      image: medium,
+      link: 'https://medium.com/@sshiwangi770',
+      alt: 'medium'
+      
+    }
+  
+  ]
   return (
     <div className="nav-ele-section">
-      <div className="container nav-ele-content">
+      <div className="container nav-ele-content home-content">
         <div className="nav-ele-text-content">
-          <h1>
+          <h1 className="name">
             Hi, I'm <br /> Shiwangi Kumari!
           </h1>
           <h2 className="hero-headline">
@@ -27,13 +59,18 @@ function Home() {
             <div className="btn stroked-btn">Contact</div>
           </div>
           <div className="socials-container">
+          {socialLinks.map((item, index) => (
+            <a href={item.link} key={index}>
+              <img className="social-icon" src={item.image} alt={item.alt}/>
+            </a>
+      ))}
             
-              <img className="social-icon" src={linkedin} alt="ig" />
+              {/* <img className="social-icon" src={linkedin} alt="ig" />
               <img className="social-icon" src={twitter} alt="ig" />
               <img className="social-icon" src={github} alt="ig" />
               <img className="social-icon" src={ig} alt="ig" />
               <img className="social-icon" src={medium} alt="ig" />
-              <img className="social-icon" src={yt} alt="ig" />
+              <img className="social-icon" src={yt} alt="ig" /> */}
             
           </div>
         </div>

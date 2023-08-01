@@ -5,7 +5,7 @@ import portfolio from '../../assets/images/portfolio final.png'
 import findhut from '../../assets/images/findhut final.png'
 import DesignItem from '../projectitems/DesignItem';
 
-function WebDesign() {
+function WebDesign({activeButton}) {
   const [showAllDesign, setShowAllDesign] = useState(false);
   const handleAllDesignsButtonClick = () => {
       setShowAllDesign(prev => !prev);
@@ -49,10 +49,10 @@ const allDesigns = designs.slice(2, 4);
   return (
     <div className="projects-container">
         <DesignItem designs = {featuredDesigns} />
-        <div className="see-all-btn" onClick={handleAllDesignsButtonClick}>
+        {/* <div className="see-all-btn" onClick={handleAllDesignsButtonClick}>
             See All
-        </div>
-        {showAllDesign && <DesignItem designs={allDesigns}/>}
+        </div> */}
+        {activeButton && <DesignItem designs={allDesigns}/>}
     </div>
   )
 }

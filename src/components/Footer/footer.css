@@ -1,9 +1,23 @@
 .footer-content {
     font-size: var(--font-footer-content);
+    text-align: center;
 }
+.footer-items {
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 .horizontal-line {
-    width: var(--container-width-lg);
+    width: 100%;
     background-color: #545252;
     height: 0.3px;
     margin-bottom: 1.5rem;
+}
+.footer-section-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }

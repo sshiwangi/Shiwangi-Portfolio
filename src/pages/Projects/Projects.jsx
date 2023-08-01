@@ -10,17 +10,25 @@ function Projects() {
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
   }
+  const [showAllProject, setShowAllProject] = useState(false);
+    const handleAllProjectsButtonClick = () => {
+        setShowAllProject(prev => !prev);
+    }
   return (
     <div className="about-ele-section">
       <div className="container">
+        <div className="heading-container">
         <SectionHeading name="Projects" />
+        <p className="see-all-text" onClick={handleAllProjectsButtonClick}>See all</p>
+        </div>
+        
         <div className="btn-container skills-btn">
-           <Buttons name="Web Development" className="skills-btn-item" onClick={handleButtonClick} />
-           <Buttons name="Web Design" className="skills-btn-item" onClick={handleButtonClick} />
+           <Buttons name="Web Development" className="skills-btn-item" onClick={handleButtonClick} isActive={activeButton === 'Web Development'}/>
+           <Buttons name="Web Design" className="skills-btn-item" onClick={handleButtonClick} isActive={activeButton === 'Web Design'} />
         </div>
 
-         {activeButton === 'Web Development' && <WebDev/>}
-         {activeButton === 'Web Design' && <WebDesign/>}
+         {activeButton === 'Web Development' && <WebDev activeButton={showAllProject}/>}
+         {activeButton === 'Web Design' && <WebDesign activeButton={showAllProject}/>}
       </div>
     </div>
   )

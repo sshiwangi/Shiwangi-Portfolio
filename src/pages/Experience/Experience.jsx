@@ -13,10 +13,13 @@ function Experience() {
   return (
     <div className="about-ele-section">
       <div className="container">
+        <div className="heading-container">
         <SectionHeading name="Experience" />
+        </div>
+        
         <div className="btn-container skills-btn">
-           <Buttons name="Community" className="skills-btn-item" onClick={handleButtonClick} />
-           <Buttons name="Open Source" className="skills-btn-item" onClick={handleButtonClick} />
+           <Buttons name="Community" className="skills-btn-item" onClick={handleButtonClick} isActive={activeButton === 'Community'} />
+           <Buttons name="Open Source" className="skills-btn-item" onClick={handleButtonClick} isActive={activeButton === 'Open Source'} />
         </div>
 
          {activeButton === 'Community' && <Community/>}

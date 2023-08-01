@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Buttons({name, onClick}) {
+function Buttons({name, onClick, isActive}) {
   return (
-    <button className="skills-btn-item" onClick={() => onClick(name)}>
+    <button className={`buttons ${isActive ? 'active-button' : 'skills-btn-item'}`} onClick={() => onClick(name)}>
         {name}
     </button>
   )
