@@ -11,6 +11,7 @@ import "./App.css";
 function App() {
   return (
     <>
+    
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -22,7 +23,8 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
+     
+     </>
   );
 }
 

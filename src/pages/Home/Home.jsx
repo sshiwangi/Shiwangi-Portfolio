@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import shiwangiImg from "../../assets/images/shiwangi-img.jpeg";
 import resumeIcon from "../../assets/images/resume-icon.png";
@@ -9,6 +9,7 @@ import ig from "../../assets/images/Instagram.png"
 import medium from "../../assets/images/Medium Monogram.png"
 import yt from "../../assets/images/YouTube.png"
 import { Link } from "react-router-dom";
+
 function Home() {
   const socialLinks = [
     {
@@ -56,7 +57,7 @@ function Home() {
               Resume
               <img src={resumeIcon} alt="resume" />
             </div>
-            <div className="btn stroked-btn">Contact</div>
+          <Link className="stroked-btn" to="/contact">  <div className="btn ">Contact</div></Link>
           </div>
           <div className="socials-container">
           {socialLinks.map((item, index) => (

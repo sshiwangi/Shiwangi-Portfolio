@@ -27,6 +27,9 @@ h2.hero-headline {
     border-image-slice: 1;
     color: white;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 img.social-icon {
     height: 32px;
