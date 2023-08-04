@@ -12,10 +12,14 @@ import { useRef } from 'react';
 
 function Contact() {
   const form = useRef();
+  
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_r5fxtno', 'template_3hq9y0j', form.current, 'E7-ioIwwRpqe3BjxV')
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_USER_ID;
+  
+    emailjs.sendForm(serviceId, templateId, form.current, userId)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
