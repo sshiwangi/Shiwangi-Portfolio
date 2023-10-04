@@ -54,7 +54,7 @@ function Home() {
           </h2>
           <div className="btn-container">
             <div className="btn filled-btn">
-              Resume
+              <a href="https://drive.google.com/file/d/1K3hfPwqHQmTYx-mPMwdcKnhTZf4Ood1p/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
               <img src={resumeIcon} alt="resume" />
             </div>
           <Link className="stroked-btn" to="/contact">  <div className="btn ">Contact</div></Link>

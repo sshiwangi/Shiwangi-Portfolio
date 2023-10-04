@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <header className=' header-section'>
        <nav className="container navbar-section">
-      <Link to="/" > <div style={{color: 'white'}} onClick={()=> handleTextClick('Home')} className="brand-name"><span className='my-name'>Shiwangi</span>.in</div></Link>
+      <Link to="/" > <div style={{color: 'white'}} onClick={()=> handleTextClick('Home')} className="brand-name"><span className='my-name'>Shiwangi</span></div></Link>
         <div className="menu-bar">
           <Link to="/"  className={`buttons ${activeText === 'Home' ? 'active-text' : 'menu-content'}`} onClick={ ()=> handleTextClick('About')}>Home</Link>
           <Link to="/about" className={`buttons ${activeText === 'About' ? 'active-text' : 'menu-content'}`} onClick={ ()=> handleTextClick('About')}>About</Link>

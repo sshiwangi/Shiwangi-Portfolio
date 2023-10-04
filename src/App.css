@@ -87,6 +87,9 @@ a.menu-content {
     padding: 0.6rem 0.9rem;
 
 }
+.btn.filled-btn a {
+  color: white;
+}
 .section-heading-underline {
   background: var(--background-gradient);
   height: 0.5rem;
