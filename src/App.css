@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -10,12 +10,17 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #10151A;
+  --color-bg: #10151a;
   --color-white: rgba(255, 255, 255, 255);
   --color-secondary-white: #f1f1f1;
   --color-footer-white: #eaeaea;
   --color-background: rgb(250, 63, 130);
-  --background-gradient: linear-gradient(88deg, rgba(250, 63, 130, 1) 0%, rgba(200, 61, 245, 0.7) 46.17%, rgba(80, 53, 220, 1) 100%);
+  --background-gradient: linear-gradient(
+    88deg,
+    rgba(250, 63, 130, 1) 0%,
+    rgba(200, 61, 245, 0.7) 46.17%,
+    rgba(80, 53, 220, 1) 100%
+  );
   --font-nav-content: 1.12rem;
   --font-footer-content: 0.8rem;
   --font-hero-desc-name: 1rem;
@@ -27,7 +32,7 @@
   --project-desc-font-size: 1rem;
   --color-link-btns: #545252;
   --color-project-item: #232323;
-  --color-item-content: #E3E0E0;
+  --color-item-content: #e3e0e0;
 
   --container-width-lg: 60%;
   --container-width-md: 82%;
@@ -47,14 +52,16 @@ html {
 }
 
 body {
-  font-family:'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
 }
-header, section, footer {
-   display: flex;
-   justify-content: center;
-   padding: 2.5rem 0rem;
+header,
+section,
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0rem;
 }
 .nav-ele-section {
   display: flex;
@@ -62,10 +69,11 @@ header, section, footer {
   flex-direction: column;
   align-items: center;
   padding: 5rem 0rem;
-    /* padding-top: 10rem; */
-    height: 100%;
+  /* padding-top: 10rem; */
+  height: 100%;
 }
-.header-section, .footer-section {
+.header-section,
+.footer-section {
   padding: 2.5rem 0rem;
   position: relative;
 }
@@ -76,18 +84,24 @@ header, section, footer {
 a.menu-content {
   color: var(--color-white);
 }
+.buttons {
+  color: white;
+}
 .btn {
-    /* background: transparent; */
-    color: var(--color-white);
-    font-size: var(--font-btn);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.7125rem;
-    padding: 0.6rem 0.9rem;
-
+  /* background: transparent; */
+  color: var(--color-white);
+  font-size: var(--font-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7125rem;
+  padding: 0.6rem 0.9rem;
 }
 .btn.filled-btn a {
+  color: white;
+}
+.see-all-text {
+  cursor: pointer;
   color: white;
 }
 .section-heading-underline {
@@ -119,11 +133,13 @@ button {
 .active-button {
   margin-right: 1rem;
   background: var(--background-gradient);
+  cursor: pointer;
 }
 .active-text {
   background: var(--background-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 .heading-container {
   display: flex;
@@ -160,9 +176,9 @@ a.project-btns {
   padding: 1.3rem;
   background-color: var(--color-project-item);
 }
-.margin-style{
+.margin-style {
   margin-bottom: 0.6rem;
-  width: 100%
+  width: 100%;
 }
 .experience-img {
   height: 50px;
@@ -200,19 +216,18 @@ hr.hr-line {
   /* margin-top: 0.8rem; */
 }
 
-
-@media screen and (max-width:1140px){
-  .container{
+@media screen and (max-width: 1140px) {
+  .container {
     width: var(--container-width-md);
   }
 }
-@media screen and (max-width:960px){
-  .container{
+@media screen and (max-width: 960px) {
+  .container {
     width: var(--container-width-sm);
   }
 }
-@media screen and (max-width:720px){
-  .container{
+@media screen and (max-width: 720px) {
+  .container {
     width: var(--container-width-md);
   }
 }
