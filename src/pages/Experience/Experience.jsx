@@ -7,7 +7,7 @@ import SectionHeading from "../../components/sectionHeading/SectionHeading";
 import Internships from "../../components/buttonslist/Internships";
 
 function Experience() {
-  const [activeButton, setActiveButton] = useState("Community");
+  const [activeButton, setActiveButton] = useState("Internships");
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
   };
