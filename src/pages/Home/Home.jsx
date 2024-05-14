@@ -52,7 +52,7 @@ function Home() {
             Hi, I'm <br /> Shiwangi Kumari!
           </h1>
           <h2 className="hero-headline">
-            A Frontend Developer and an Open Source Enthusiast from India.
+            A Frontend Developer and UI Designer from India.
           </h2>
           <div className="btn-container">
             <div className="btn filled-btn">
