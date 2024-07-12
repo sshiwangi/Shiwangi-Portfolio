@@ -12,6 +12,8 @@ import learnai from "../../assets/images/Frame 2.png";
 import collegeapi from "../../assets/images/Frame 3.png";
 import reactdashboard from "../../assets/images/Frame 4.png";
 import questionpaper from "../../assets/images/Frame 5 (1).png";
+import saasui from "../../assets/images/Frame 7 (1).png";
+import canvaseditor from "../../assets/images/Frame 8.png";
 
 function WebDev({ activeButton }) {
   // const [showAllProject, setShowAllProject] = useState(false);
@@ -54,6 +56,17 @@ function WebDev({ activeButton }) {
     },
     {
       id: 4,
+      image: saasui,
+      title: "SaaSUI",
+      technology: "Next JS, TypeScript, Tailwind",
+      desc: "Get access to a vast collection of free, high-quality components and templates that you can seamlessly copy and paste into your projects.",
+      links: {
+        Demo: "https://saasui-two.vercel.app/",
+        GitHub: "https://github.com/sshiwangi/saasui",
+      },
+    },
+    {
+      id: 5,
       image: portfolio,
       title: "Portfolio",
       technology: "React JS",
@@ -64,7 +77,18 @@ function WebDev({ activeButton }) {
       },
     },
     {
-      id: 5,
+      id: 6,
+      image: canvaseditor,
+      title: "Canvas Editor",
+      technology: "React JS. Canvas, tailwind css, eyedropper-api",
+      desc: "Canvas Editor that allows you to edit adds by uploading images, editing caption and call to action.",
+      links: {
+        Demo: "https://canvas-editor-three.vercel.app/",
+        GitHub: "https://github.com/sshiwangi/canvas-editor",
+      },
+    },
+    {
+      id: 7,
       image: reactdashboard,
       title: "React Dashboard",
       technology: "React JS, Tailwind CSS",
@@ -75,7 +99,7 @@ function WebDev({ activeButton }) {
       },
     },
     {
-      id: 6,
+      id: 8,
       image: hustlersHelp,
       title: "HustlersHelp",
       technology: "React JS, Tailwind CSS, Express js, Node js, Mongo DB",
@@ -86,7 +110,7 @@ function WebDev({ activeButton }) {
       },
     },
     {
-      id: 7,
+      id: 9,
       image: reactquiz,
       title: "React Quiz",
       technology: "React JS",
@@ -97,7 +121,7 @@ function WebDev({ activeButton }) {
       },
     },
     {
-      id: 8,
+      id: 10,
       image: memegenerator,
       title: "Meme Generator",
       technology: "React JS",
@@ -108,7 +132,7 @@ function WebDev({ activeButton }) {
       },
     },
     {
-      id: 9,
+      id: 11,
       image: questionpaper,
       title: "Question Paper Generator",
       technology: "React JS, Node JS, Express JS, Tailwind CSS",
@@ -120,7 +144,7 @@ function WebDev({ activeButton }) {
     },
   ];
   const featuredProject = projects.slice(0, 2);
-  const allProject = projects.slice(2, 9);
+  const allProject = projects.slice(2, 11);
 
   return (
     <div className="projects-container">
